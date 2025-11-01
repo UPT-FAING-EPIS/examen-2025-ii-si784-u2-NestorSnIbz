@@ -18,6 +18,7 @@ jobs:
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '8.0.x'
+          cache: true
 
       - name: Restore dependencies
         working-directory: tests/UPTRepo.UiTests
@@ -32,9 +33,9 @@ jobs:
         shell: pwsh
         run: ./bin/Release/net8.0/playwright.ps1 install
 
-      - name: Run tests (Chromium & Firefox)
+      - name: Run tests (Chromium & WebKit)
         working-directory: tests/UPTRepo.UiTests
-        run: dotnet test --configuration Release --logger "trx;LogFileName=test_results.trx"
+        run: dotnet test --configuration Release --logger "trx;LogFileName=test_results.trx" --results-directory tests/UPTRepo.UiTests/TestResults
 
       - name: Upload videos
         if: always()
@@ -42,4 +43,12 @@ jobs:
         with:
           name: playwright-videos
           path: tests/UPTRepo.UiTests/bin/Release/net8.0/artifacts/videos
+          if-no-files-found: warn
+
+      - name: Upload TRX results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ui-tests-trx
+          path: tests/UPTRepo.UiTests/TestResults
           if-no-files-found: warn
