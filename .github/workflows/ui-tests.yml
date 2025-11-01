@@ -1,0 +1,45 @@
+name: UI Tests (Playwright .NET)
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "*" ]
+  workflow_dispatch:
+
+jobs:
+  tests:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Restore dependencies
+        working-directory: tests/UPTRepo.UiTests
+        run: dotnet restore
+
+      - name: Build
+        working-directory: tests/UPTRepo.UiTests
+        run: dotnet build --configuration Release
+
+      - name: Install Playwright browsers
+        working-directory: tests/UPTRepo.UiTests
+        shell: pwsh
+        run: ./bin/Release/net8.0/playwright.ps1 install
+
+      - name: Run tests (Chromium & Firefox)
+        working-directory: tests/UPTRepo.UiTests
+        run: dotnet test --configuration Release --logger "trx;LogFileName=test_results.trx"
+
+      - name: Upload videos
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-videos
+          path: tests/UPTRepo.UiTests/bin/Release/net8.0/artifacts/videos
+          if-no-files-found: warn

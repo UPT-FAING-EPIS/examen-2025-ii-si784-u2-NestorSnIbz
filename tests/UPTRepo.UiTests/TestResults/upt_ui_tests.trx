@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="c87b40da-ee42-4bdc-b1f1-e449ec44efab" name="Ryzen@DESKTOP-9H3TDUQ 2025-10-31 21:36:48" runUser="DESKTOP-9H3TDUQ\Ryzen" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2025-10-31T21:36:48.3656286-05:00" queuing="2025-10-31T21:36:48.3656289-05:00" start="2025-10-31T21:36:40.2422291-05:00" finish="2025-10-31T21:36:57.8670584-05:00" />
+  <TestSettings name="default" id="a46e5c38-cc0c-4d76-86c5-eabb3348cab6">
+    <Deployment runDeploymentRoot="Ryzen_DESKTOP-9H3TDUQ_2025-10-31_21_36_48" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="2bff8f8b-f9f8-40cc-9af3-214f13acf1cd" testId="1a36afad-8390-56aa-64f8-363477242de2" testName="BusquedaTecnologia_DevuelveResultados_EnDosNavegadores(&quot;chromium&quot;)" computerName="DESKTOP-9H3TDUQ" duration="00:00:07.6158610" startTime="2025-10-31T21:36:40.7164198-05:00" endTime="2025-10-31T21:36:48.3322231-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2bff8f8b-f9f8-40cc-9af3-214f13acf1cd" />
+    <UnitTestResult executionId="4a9518c0-fab5-4269-a2ce-105b404aebfb" testId="7472bc3b-6f8c-ff47-7ac5-ab6d0e1ce8f0" testName="BusquedaTecnologia_DevuelveResultados_EnDosNavegadores(&quot;webkit&quot;)" computerName="DESKTOP-9H3TDUQ" duration="00:00:09.4793950" startTime="2025-10-31T21:36:48.3333415-05:00" endTime="2025-10-31T21:36:57.8127356-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4a9518c0-fab5-4269-a2ce-105b404aebfb" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="BusquedaTecnologia_DevuelveResultados_EnDosNavegadores(&quot;webkit&quot;)" storage="c:\nueva carpeta\examen-2025-ii-si784-u2-nestorsnibz\tests\uptrepo.uitests\bin\debug\net8.0\uptrepo.uitests.dll" id="7472bc3b-6f8c-ff47-7ac5-ab6d0e1ce8f0">
+      <Execution id="4a9518c0-fab5-4269-a2ce-105b404aebfb" />
+      <TestMethod codeBase="C:\Nueva carpeta\examen-2025-ii-si784-u2-NestorSnIbz\tests\UPTRepo.UiTests\bin\Debug\net8.0\UPTRepo.UiTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UPTRepo.UiTests.SearchTests" name="BusquedaTecnologia_DevuelveResultados_EnDosNavegadores(&quot;webkit&quot;)" />
+    </UnitTest>
+    <UnitTest name="BusquedaTecnologia_DevuelveResultados_EnDosNavegadores(&quot;chromium&quot;)" storage="c:\nueva carpeta\examen-2025-ii-si784-u2-nestorsnibz\tests\uptrepo.uitests\bin\debug\net8.0\uptrepo.uitests.dll" id="1a36afad-8390-56aa-64f8-363477242de2">
+      <Execution id="2bff8f8b-f9f8-40cc-9af3-214f13acf1cd" />
+      <TestMethod codeBase="C:\Nueva carpeta\examen-2025-ii-si784-u2-NestorSnIbz\tests\UPTRepo.UiTests\bin\Debug\net8.0\UPTRepo.UiTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UPTRepo.UiTests.SearchTests" name="BusquedaTecnologia_DevuelveResultados_EnDosNavegadores(&quot;chromium&quot;)" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="1a36afad-8390-56aa-64f8-363477242de2" executionId="2bff8f8b-f9f8-40cc-9af3-214f13acf1cd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7472bc3b-6f8c-ff47-7ac5-ab6d0e1ce8f0" executionId="4a9518c0-fab5-4269-a2ce-105b404aebfb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Resultados sin formato de lista" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Todos los resultados cargados" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="2" executed="2" passed="2" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 4.5.0.0: Test execution started&#xD;
+Running all tests in C:\Nueva carpeta\examen-2025-ii-si784-u2-NestorSnIbz\tests\UPTRepo.UiTests\bin\Debug\net8.0\UPTRepo.UiTests.dll&#xD;
+   NUnit3TestExecutor discovered 2 of 2 NUnit test cases using Current Discovery mode, Non-Explicit run&#xD;
+NUnit Adapter 4.5.0.0: Test execution complete&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>
