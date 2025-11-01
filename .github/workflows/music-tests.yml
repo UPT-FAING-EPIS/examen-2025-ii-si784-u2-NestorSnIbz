@@ -25,7 +25,8 @@ jobs:
           dotnet-version: '8.0.x'
 
       - name: Restore
-        run: dotnet restore
+        run: dotnet restore src/MusicApp/MusicApp.csproj
+
 
       - name: Build
         run: dotnet build --configuration Release --no-restore
