@@ -24,8 +24,12 @@ jobs:
         with:
           dotnet-version: '8.0.x'
 
-      - name: Restore
-        run: dotnet restore src/MusicApp/MusicApp.csproj
+      - name: Restore projects
+        shell: pwsh
+        run: |
+          dotnet restore src/MusicApp/MusicApp.csproj
+          dotnet restore tests/MusicApp.UnitTests/MusicApp.UnitTests.csproj
+          dotnet restore tests/MusicApp.BddTests/MusicApp.BddTests.csproj
 
 
       - name: Build
