@@ -40,7 +40,7 @@ jobs:
           dotnet build tests/MusicApp.BddTests/MusicApp.BddTests.csproj --configuration Release --no-restore
 
       - name: Test Unit with Coverage
-        run: dotnet test tests/MusicApp.UnitTests/MusicApp.UnitTests.csproj --configuration Release --no-build --logger "trx;LogFileName=unit_tests.trx" /p:CollectCoverage=true /p:CoverletOutput="TestResults/coverage/" /p:CoverletOutputFormat="cobertura"
+        run: dotnet test tests/MusicApp.UnitTests/MusicApp.UnitTests.csproj --configuration Release --no-build --logger "trx;LogFileName=unit_tests.trx" --collect "XPlat Code Coverage" --results-directory tests/MusicApp.UnitTests/TestResults -p:CoverletOutputFormat=cobertura
 
       - name: Install reportgenerator tool
         run: dotnet tool install --global dotnet-reportgenerator-globaltool
@@ -49,7 +49,7 @@ jobs:
         shell: pwsh
         run: |
           $env:PATH += ";$env:USERPROFILE\.dotnet\tools"
-          reportgenerator -reports:tests/MusicApp.UnitTests/TestResults/coverage/coverage.cobertura.xml -targetdir:gh-pages/unit-coverage -reporttypes:Html
+          reportgenerator -reports:tests/MusicApp.UnitTests/TestResults/**/coverage.cobertura.xml -targetdir:gh-pages/unit-coverage -reporttypes:Html
 
       - name: Test BDD (SpecFlow)
         run: dotnet test tests/MusicApp.BddTests/MusicApp.BddTests.csproj --configuration Release --no-build --logger "trx;LogFileName=bdd_tests.trx"
