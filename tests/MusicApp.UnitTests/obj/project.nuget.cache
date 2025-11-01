@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "dgSpecHash": "zoMw0Rpu5Ok=",
+  "success": true,
+  "projectFilePath": "C:\\Nueva carpeta\\examen-2025-ii-si784-u2-NestorSnIbz\\tests\\MusicApp.UnitTests\\MusicApp.UnitTests.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Ryzen\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
+    "C:\\Users\\Ryzen\\.nuget\\packages\\microsoft.codecoverage\\17.10.0\\microsoft.codecoverage.17.10.0.nupkg.sha512",
+    "C:\\Users\\Ryzen\\.nuget\\packages\\microsoft.net.test.sdk\\17.10.0\\microsoft.net.test.sdk.17.10.0.nupkg.sha512",
+    "C:\\Users\\Ryzen\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Ryzen\\.nuget\\packages\\microsoft.testplatform.objectmodel\\17.10.0\\microsoft.testplatform.objectmodel.17.10.0.nupkg.sha512",
+    "C:\\Users\\Ryzen\\.nuget\\packages\\microsoft.testplatform.testhost\\17.10.0\\microsoft.testplatform.testhost.17.10.0.nupkg.sha512",
+    "C:\\Users\\Ryzen\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
+    "C:\\Users\\Ryzen\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Ryzen\\.nuget\\packages\\nunit\\3.13.3\\nunit.3.13.3.nupkg.sha512",
+    "C:\\Users\\Ryzen\\.nuget\\packages\\nunit3testadapter\\4.5.0\\nunit3testadapter.4.5.0.nupkg.sha512",
+    "C:\\Users\\Ryzen\\.nuget\\packages\\reportgenerator\\5.4.0\\reportgenerator.5.4.0.nupkg.sha512",
+    "C:\\Users\\Ryzen\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "MusicApp.UnitTests depende de ReportGenerator (>= 5.3.12), pero no se encontró ReportGenerator 5.3.12. Se resolvió una mejor coincidencia aproximada de ReportGenerator 5.4.0.",
+      "libraryId": "ReportGenerator",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
+}

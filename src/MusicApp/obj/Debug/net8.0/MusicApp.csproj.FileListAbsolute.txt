@@ -1,0 +1,12 @@
+C:\Nueva carpeta\examen-2025-ii-si784-u2-NestorSnIbz\src\MusicApp\bin\Debug\net8.0\MusicApp.deps.json
+C:\Nueva carpeta\examen-2025-ii-si784-u2-NestorSnIbz\src\MusicApp\bin\Debug\net8.0\MusicApp.dll
+C:\Nueva carpeta\examen-2025-ii-si784-u2-NestorSnIbz\src\MusicApp\bin\Debug\net8.0\MusicApp.pdb
+C:\Nueva carpeta\examen-2025-ii-si784-u2-NestorSnIbz\src\MusicApp\obj\Debug\net8.0\MusicApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Nueva carpeta\examen-2025-ii-si784-u2-NestorSnIbz\src\MusicApp\obj\Debug\net8.0\MusicApp.AssemblyInfoInputs.cache
+C:\Nueva carpeta\examen-2025-ii-si784-u2-NestorSnIbz\src\MusicApp\obj\Debug\net8.0\MusicApp.AssemblyInfo.cs
+C:\Nueva carpeta\examen-2025-ii-si784-u2-NestorSnIbz\src\MusicApp\obj\Debug\net8.0\MusicApp.csproj.CoreCompileInputs.cache
+C:\Nueva carpeta\examen-2025-ii-si784-u2-NestorSnIbz\src\MusicApp\obj\Debug\net8.0\MusicApp.sourcelink.json
+C:\Nueva carpeta\examen-2025-ii-si784-u2-NestorSnIbz\src\MusicApp\obj\Debug\net8.0\MusicApp.dll
+C:\Nueva carpeta\examen-2025-ii-si784-u2-NestorSnIbz\src\MusicApp\obj\Debug\net8.0\refint\MusicApp.dll
+C:\Nueva carpeta\examen-2025-ii-si784-u2-NestorSnIbz\src\MusicApp\obj\Debug\net8.0\MusicApp.pdb
+C:\Nueva carpeta\examen-2025-ii-si784-u2-NestorSnIbz\src\MusicApp\obj\Debug\net8.0\ref\MusicApp.dll

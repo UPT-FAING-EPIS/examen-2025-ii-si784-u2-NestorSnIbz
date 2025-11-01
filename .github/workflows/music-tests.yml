@@ -1,0 +1,80 @@
+name: MusicApp Unit & BDD Tests + Reports
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "*" ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-test:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Restore
+        run: dotnet restore
+
+      - name: Build
+        run: dotnet build --configuration Release --no-restore
+
+      - name: Test Unit with Coverage
+        run: dotnet test tests/MusicApp.UnitTests/MusicApp.UnitTests.csproj --configuration Release --no-build --logger "trx;LogFileName=unit_tests.trx" /p:CollectCoverage=true /p:CoverletOutput="TestResults/coverage/" /p:CoverletOutputFormat="cobertura"
+
+      - name: Install reportgenerator tool
+        run: dotnet tool install --global dotnet-reportgenerator-globaltool
+
+      - name: Generate Coverage Report
+        shell: pwsh
+        run: |
+          $env:PATH += ";$env:USERPROFILE\.dotnet\tools"
+          reportgenerator -reports:tests/MusicApp.UnitTests/TestResults/coverage/coverage.cobertura.xml -targetdir:gh-pages/unit-coverage -reporttypes:Html
+
+      - name: Test BDD (SpecFlow)
+        run: dotnet test tests/MusicApp.BddTests/MusicApp.BddTests.csproj --configuration Release --no-build --logger "trx;LogFileName=bdd_tests.trx"
+
+      - name: Install SpecFlow LivingDoc CLI
+        run: dotnet tool install --global SpecFlow.Plus.LivingDoc.CLI
+
+      - name: Generate LivingDoc
+        shell: pwsh
+        run: |
+          $env:PATH += ";$env:USERPROFILE\.dotnet\tools"
+          $dll = "tests/MusicApp.BddTests/bin/Release/net8.0/MusicApp.BddTests.dll"
+          $json = (Get-ChildItem -Recurse -Path tests/MusicApp.BddTests -Filter "*.json" | Select-Object -First 1).FullName
+          livingdoc test-assembly $dll -t $json -o gh-pages/bdd-livingdoc
+
+      - name: Copy TRX results
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force -Path gh-pages/test-results | Out-Null
+          Copy-Item tests/MusicApp.UnitTests/TestResults/unit_tests.trx gh-pages/test-results/ -Force
+          Copy-Item tests/MusicApp.BddTests/TestResults/bdd_tests.trx gh-pages/test-results/ -Force
+
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: gh-pages
+
+  deploy:
+    needs: build-and-test
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deploy
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="04fa374a-895b-4c39-90d5-e7f3c126ed8f" name="Ryzen@DESKTOP-9H3TDUQ 2025-10-31 21:42:04" runUser="DESKTOP-9H3TDUQ\Ryzen" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2025-10-31T21:42:04.8647585-05:00" queuing="2025-10-31T21:42:04.8647588-05:00" start="2025-10-31T21:42:04.3076084-05:00" finish="2025-10-31T21:42:04.8700462-05:00" />
+  <TestSettings name="default" id="4e75689f-9609-480c-a4b2-a24a1441c820">
+    <Deployment runDeploymentRoot="Ryzen_DESKTOP-9H3TDUQ_2025-10-31_21_42_04" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="4e16a27d-8807-45e7-a06c-b924d32d312f" testId="8432c034-eddc-e5ed-e8d2-3fef06265e36" testName="Remote_PressButton_Executes_SetCommand" computerName="DESKTOP-9H3TDUQ" duration="00:00:00.0002100" startTime="2025-10-31T21:42:04.7542152-05:00" endTime="2025-10-31T21:42:04.7544245-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4e16a27d-8807-45e7-a06c-b924d32d312f" />
+    <UnitTestResult executionId="4dcd1c7c-12df-43aa-8751-e0fc3221149d" testId="309554c3-52f7-9ea3-d280-0141ab6bb0c1" testName="Remote_PressButton_WithoutCommand_Throws" computerName="DESKTOP-9H3TDUQ" duration="00:00:00.0029450" startTime="2025-10-31T21:42:04.7544340-05:00" endTime="2025-10-31T21:42:04.7573789-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4dcd1c7c-12df-43aa-8751-e0fc3221149d" />
+    <UnitTestResult executionId="fba4dbbc-8356-4ee4-864c-20ed8396c779" testId="296431f2-0de9-cfee-0123-4fe3093a2170" testName="SkipCommand_Returns_SkippingMessage" computerName="DESKTOP-9H3TDUQ" duration="00:00:00.0000550" startTime="2025-10-31T21:42:04.7573900-05:00" endTime="2025-10-31T21:42:04.7574448-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fba4dbbc-8356-4ee4-864c-20ed8396c779" />
+    <UnitTestResult executionId="b6fbe313-42e6-435d-adc9-e2e8acde6038" testId="c7ca4ff5-eb66-d9b3-e164-9f88d3c4f57e" testName="PauseCommand_Returns_PausingMessage" computerName="DESKTOP-9H3TDUQ" duration="00:00:00.0040430" startTime="2025-10-31T21:42:04.7489960-05:00" endTime="2025-10-31T21:42:04.7529938-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b6fbe313-42e6-435d-adc9-e2e8acde6038" />
+    <UnitTestResult executionId="5199982b-0322-4475-abfa-6d0656f29846" testId="25cfee4b-9d15-1d9c-ea63-c7be8cbb6944" testName="PlayCommand_Returns_PlayingMessage" computerName="DESKTOP-9H3TDUQ" duration="00:00:00.0001420" startTime="2025-10-31T21:42:04.7540597-05:00" endTime="2025-10-31T21:42:04.7542017-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5199982b-0322-4475-abfa-6d0656f29846" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="Remote_PressButton_WithoutCommand_Throws" storage="c:\nueva carpeta\examen-2025-ii-si784-u2-nestorsnibz\tests\musicapp.unittests\bin\release\net8.0\musicapp.unittests.dll" id="309554c3-52f7-9ea3-d280-0141ab6bb0c1">
+      <Execution id="4dcd1c7c-12df-43aa-8751-e0fc3221149d" />
+      <TestMethod codeBase="C:\Nueva carpeta\examen-2025-ii-si784-u2-NestorSnIbz\tests\MusicApp.UnitTests\bin\Release\net8.0\MusicApp.UnitTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="MusicApp.UnitTests.MusicTests" name="Remote_PressButton_WithoutCommand_Throws" />
+    </UnitTest>
+    <UnitTest name="PauseCommand_Returns_PausingMessage" storage="c:\nueva carpeta\examen-2025-ii-si784-u2-nestorsnibz\tests\musicapp.unittests\bin\release\net8.0\musicapp.unittests.dll" id="c7ca4ff5-eb66-d9b3-e164-9f88d3c4f57e">
+      <Execution id="b6fbe313-42e6-435d-adc9-e2e8acde6038" />
+      <TestMethod codeBase="C:\Nueva carpeta\examen-2025-ii-si784-u2-NestorSnIbz\tests\MusicApp.UnitTests\bin\Release\net8.0\MusicApp.UnitTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="MusicApp.UnitTests.MusicTests" name="PauseCommand_Returns_PausingMessage" />
+    </UnitTest>
+    <UnitTest name="Remote_PressButton_Executes_SetCommand" storage="c:\nueva carpeta\examen-2025-ii-si784-u2-nestorsnibz\tests\musicapp.unittests\bin\release\net8.0\musicapp.unittests.dll" id="8432c034-eddc-e5ed-e8d2-3fef06265e36">
+      <Execution id="4e16a27d-8807-45e7-a06c-b924d32d312f" />
+      <TestMethod codeBase="C:\Nueva carpeta\examen-2025-ii-si784-u2-NestorSnIbz\tests\MusicApp.UnitTests\bin\Release\net8.0\MusicApp.UnitTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="MusicApp.UnitTests.MusicTests" name="Remote_PressButton_Executes_SetCommand" />
+    </UnitTest>
+    <UnitTest name="SkipCommand_Returns_SkippingMessage" storage="c:\nueva carpeta\examen-2025-ii-si784-u2-nestorsnibz\tests\musicapp.unittests\bin\release\net8.0\musicapp.unittests.dll" id="296431f2-0de9-cfee-0123-4fe3093a2170">
+      <Execution id="fba4dbbc-8356-4ee4-864c-20ed8396c779" />
+      <TestMethod codeBase="C:\Nueva carpeta\examen-2025-ii-si784-u2-NestorSnIbz\tests\MusicApp.UnitTests\bin\Release\net8.0\MusicApp.UnitTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="MusicApp.UnitTests.MusicTests" name="SkipCommand_Returns_SkippingMessage" />
+    </UnitTest>
+    <UnitTest name="PlayCommand_Returns_PlayingMessage" storage="c:\nueva carpeta\examen-2025-ii-si784-u2-nestorsnibz\tests\musicapp.unittests\bin\release\net8.0\musicapp.unittests.dll" id="25cfee4b-9d15-1d9c-ea63-c7be8cbb6944">
+      <Execution id="5199982b-0322-4475-abfa-6d0656f29846" />
+      <TestMethod codeBase="C:\Nueva carpeta\examen-2025-ii-si784-u2-NestorSnIbz\tests\MusicApp.UnitTests\bin\Release\net8.0\MusicApp.UnitTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="MusicApp.UnitTests.MusicTests" name="PlayCommand_Returns_PlayingMessage" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="8432c034-eddc-e5ed-e8d2-3fef06265e36" executionId="4e16a27d-8807-45e7-a06c-b924d32d312f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="309554c3-52f7-9ea3-d280-0141ab6bb0c1" executionId="4dcd1c7c-12df-43aa-8751-e0fc3221149d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="296431f2-0de9-cfee-0123-4fe3093a2170" executionId="fba4dbbc-8356-4ee4-864c-20ed8396c779" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c7ca4ff5-eb66-d9b3-e164-9f88d3c4f57e" executionId="b6fbe313-42e6-435d-adc9-e2e8acde6038" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="25cfee4b-9d15-1d9c-ea63-c7be8cbb6944" executionId="5199982b-0322-4475-abfa-6d0656f29846" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Resultados sin formato de lista" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Todos los resultados cargados" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="5" executed="5" passed="5" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 4.5.0.0: Test execution started&#xD;
+Running all tests in C:\Nueva carpeta\examen-2025-ii-si784-u2-NestorSnIbz\tests\MusicApp.UnitTests\bin\Release\net8.0\MusicApp.UnitTests.dll&#xD;
+   NUnit3TestExecutor discovered 5 of 5 NUnit test cases using Current Discovery mode, Non-Explicit run&#xD;
+NUnit Adapter 4.5.0.0: Test execution complete&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

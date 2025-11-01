@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="e0c63bf2-ca63-4243-a073-9f5ff4f572d8" name="Ryzen@DESKTOP-9H3TDUQ 2025-10-31 21:43:06" runUser="DESKTOP-9H3TDUQ\Ryzen" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2025-10-31T21:43:06.6768014-05:00" queuing="2025-10-31T21:43:06.6768020-05:00" start="2025-10-31T21:43:04.7516718-05:00" finish="2025-10-31T21:43:11.1338747-05:00" />
+  <TestSettings name="default" id="70761129-f440-440e-8e25-046950b99174">
+    <Deployment runDeploymentRoot="Ryzen_DESKTOP-9H3TDUQ_2025-10-31_21_43_06" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="4fbfe18b-9e5f-4aa5-aa18-a9a8309d9481" testId="4378bcd1-9057-499e-4eb8-6d2de90d8a81" testName="EjecutarComandoDesdeElControlRemoto(&quot;Pause&quot;,&quot;Pausing the song.&quot;,null)" computerName="DESKTOP-9H3TDUQ" duration="00:00:00.0010870" startTime="2025-10-31T21:43:05.4375008-05:00" endTime="2025-10-31T21:43:05.4385875-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4fbfe18b-9e5f-4aa5-aa18-a9a8309d9481">
+      <Output>
+        <StdOut>Given un reproductor de música&#xD;
+-&gt; done: MusicRemoteSteps.GivenUnReproductorDeMusica() (0,0s)&#xD;
+And un control remoto de música&#xD;
+-&gt; done: MusicRemoteSteps.GivenUnControlRemotoDeMusica() (0,0s)&#xD;
+And el comando Pause configurado en el control remoto&#xD;
+-&gt; done: MusicRemoteSteps.GivenElComandoConfiguradoEnElControlRemoto("Pause") (0,0s)&#xD;
+When presiono el botón del control remoto&#xD;
+-&gt; done: MusicRemoteSteps.WhenPresionoElBotonDelControlRemoto() (0,0s)&#xD;
+Then recibo el mensaje Pausing the song.&#xD;
+-&gt; done: MusicRemoteSteps.ThenReciboElMensaje("Pausing the song.") (0,0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c2f78558-fd49-411a-81b9-5103c82c8a8b" testId="64bad227-7021-d9dc-095e-23c449142857" testName="EjecutarComandoDesdeElControlRemoto(&quot;Skip&quot;,&quot;Skipping to the next song.&quot;,null)" computerName="DESKTOP-9H3TDUQ" duration="00:00:00.0004320" startTime="2025-10-31T21:43:05.4386130-05:00" endTime="2025-10-31T21:43:05.4390446-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c2f78558-fd49-411a-81b9-5103c82c8a8b">
+      <Output>
+        <StdOut>Given un reproductor de música&#xD;
+-&gt; done: MusicRemoteSteps.GivenUnReproductorDeMusica() (0,0s)&#xD;
+And un control remoto de música&#xD;
+-&gt; done: MusicRemoteSteps.GivenUnControlRemotoDeMusica() (0,0s)&#xD;
+And el comando Skip configurado en el control remoto&#xD;
+-&gt; done: MusicRemoteSteps.GivenElComandoConfiguradoEnElControlRemoto("Skip") (0,0s)&#xD;
+When presiono el botón del control remoto&#xD;
+-&gt; done: MusicRemoteSteps.WhenPresionoElBotonDelControlRemoto() (0,0s)&#xD;
+Then recibo el mensaje Skipping to the next song.&#xD;
+-&gt; done: MusicRemoteSteps.ThenReciboElMensaje("Skipping to the n...") (0,0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="35994921-a82c-4a29-ba15-2694904f6acd" testId="9124d6c2-db7f-512c-f56a-b1c77b8116ed" testName="EjecutarComandoDesdeElControlRemoto(&quot;Play&quot;,&quot;Playing the song.&quot;,null)" computerName="DESKTOP-9H3TDUQ" duration="00:00:00.0301300" startTime="2025-10-31T21:43:05.4063516-05:00" endTime="2025-10-31T21:43:05.4364332-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="35994921-a82c-4a29-ba15-2694904f6acd">
+      <Output>
+        <StdOut>Given un reproductor de música&#xD;
+-&gt; done: MusicRemoteSteps.GivenUnReproductorDeMusica() (0,0s)&#xD;
+And un control remoto de música&#xD;
+-&gt; done: MusicRemoteSteps.GivenUnControlRemotoDeMusica() (0,0s)&#xD;
+And el comando Play configurado en el control remoto&#xD;
+-&gt; done: MusicRemoteSteps.GivenElComandoConfiguradoEnElControlRemoto("Play") (0,0s)&#xD;
+When presiono el botón del control remoto&#xD;
+-&gt; done: MusicRemoteSteps.WhenPresionoElBotonDelControlRemoto() (0,0s)&#xD;
+Then recibo el mensaje Playing the song.&#xD;
+-&gt; done: MusicRemoteSteps.ThenReciboElMensaje("Playing the song.") (0,0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="EjecutarComandoDesdeElControlRemoto(&quot;Skip&quot;,&quot;Skipping to the next song.&quot;,null)" storage="c:\nueva carpeta\examen-2025-ii-si784-u2-nestorsnibz\tests\musicapp.bddtests\bin\release\net8.0\musicapp.bddtests.dll" id="64bad227-7021-d9dc-095e-23c449142857">
+      <Execution id="c2f78558-fd49-411a-81b9-5103c82c8a8b" />
+      <TestMethod codeBase="C:\Nueva carpeta\examen-2025-ii-si784-u2-NestorSnIbz\tests\MusicApp.BddTests\bin\Release\net8.0\MusicApp.BddTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="MusicApp.BddTests.Features.ControlDeMusicaConComandosFeature" name="EjecutarComandoDesdeElControlRemoto(&quot;Skip&quot;,&quot;Skipping to the next song.&quot;,null)" />
+    </UnitTest>
+    <UnitTest name="EjecutarComandoDesdeElControlRemoto(&quot;Play&quot;,&quot;Playing the song.&quot;,null)" storage="c:\nueva carpeta\examen-2025-ii-si784-u2-nestorsnibz\tests\musicapp.bddtests\bin\release\net8.0\musicapp.bddtests.dll" id="9124d6c2-db7f-512c-f56a-b1c77b8116ed">
+      <Execution id="35994921-a82c-4a29-ba15-2694904f6acd" />
+      <TestMethod codeBase="C:\Nueva carpeta\examen-2025-ii-si784-u2-NestorSnIbz\tests\MusicApp.BddTests\bin\Release\net8.0\MusicApp.BddTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="MusicApp.BddTests.Features.ControlDeMusicaConComandosFeature" name="EjecutarComandoDesdeElControlRemoto(&quot;Play&quot;,&quot;Playing the song.&quot;,null)" />
+    </UnitTest>
+    <UnitTest name="EjecutarComandoDesdeElControlRemoto(&quot;Pause&quot;,&quot;Pausing the song.&quot;,null)" storage="c:\nueva carpeta\examen-2025-ii-si784-u2-nestorsnibz\tests\musicapp.bddtests\bin\release\net8.0\musicapp.bddtests.dll" id="4378bcd1-9057-499e-4eb8-6d2de90d8a81">
+      <Execution id="4fbfe18b-9e5f-4aa5-aa18-a9a8309d9481" />
+      <TestMethod codeBase="C:\Nueva carpeta\examen-2025-ii-si784-u2-NestorSnIbz\tests\MusicApp.BddTests\bin\Release\net8.0\MusicApp.BddTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="MusicApp.BddTests.Features.ControlDeMusicaConComandosFeature" name="EjecutarComandoDesdeElControlRemoto(&quot;Pause&quot;,&quot;Pausing the song.&quot;,null)" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="4378bcd1-9057-499e-4eb8-6d2de90d8a81" executionId="4fbfe18b-9e5f-4aa5-aa18-a9a8309d9481" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="64bad227-7021-d9dc-095e-23c449142857" executionId="c2f78558-fd49-411a-81b9-5103c82c8a8b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9124d6c2-db7f-512c-f56a-b1c77b8116ed" executionId="35994921-a82c-4a29-ba15-2694904f6acd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Resultados sin formato de lista" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Todos los resultados cargados" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="3" executed="3" passed="3" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 4.5.0.0: Test execution started&#xD;
+Running all tests in C:\Nueva carpeta\examen-2025-ii-si784-u2-NestorSnIbz\tests\MusicApp.BddTests\bin\Release\net8.0\MusicApp.BddTests.dll&#xD;
+   NUnit3TestExecutor discovered 3 of 3 NUnit test cases using Current Discovery mode, Non-Explicit run&#xD;
+NUnit Adapter 4.5.0.0: Test execution complete&#xD;
+</StdOut>
+    </Output>
+    <RunInfos>
+      <RunInfo computerName="DESKTOP-9H3TDUQ" outcome="Warning" timestamp="2025-10-31T21:43:05.4475373-05:00">
+        <Text>Given un reproductor de música&#xD;
+-&gt; done: MusicRemoteSteps.GivenUnReproductorDeMusica() (0,0s)&#xD;
+And un control remoto de música&#xD;
+-&gt; done: MusicRemoteSteps.GivenUnControlRemotoDeMusica() (0,0s)&#xD;
+And el comando Play configurado en el control remoto&#xD;
+-&gt; done: MusicRemoteSteps.GivenElComandoConfiguradoEnElControlRemoto("Play") (0,0s)&#xD;
+When presiono el botón del control remoto&#xD;
+-&gt; done: MusicRemoteSteps.WhenPresionoElBotonDelControlRemoto() (0,0s)&#xD;
+Then recibo el mensaje Playing the song.&#xD;
+-&gt; done: MusicRemoteSteps.ThenReciboElMensaje("Playing the song.") (0,0s)&#xD;
+</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-9H3TDUQ" outcome="Warning" timestamp="2025-10-31T21:43:05.4505724-05:00">
+        <Text>Given un reproductor de música&#xD;
+-&gt; done: MusicRemoteSteps.GivenUnReproductorDeMusica() (0,0s)&#xD;
+And un control remoto de música&#xD;
+-&gt; done: MusicRemoteSteps.GivenUnControlRemotoDeMusica() (0,0s)&#xD;
+And el comando Pause configurado en el control remoto&#xD;
+-&gt; done: MusicRemoteSteps.GivenElComandoConfiguradoEnElControlRemoto("Pause") (0,0s)&#xD;
+When presiono el botón del control remoto&#xD;
+-&gt; done: MusicRemoteSteps.WhenPresionoElBotonDelControlRemoto() (0,0s)&#xD;
+Then recibo el mensaje Pausing the song.&#xD;
+-&gt; done: MusicRemoteSteps.ThenReciboElMensaje("Pausing the song.") (0,0s)&#xD;
+</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-9H3TDUQ" outcome="Warning" timestamp="2025-10-31T21:43:05.4512114-05:00">
+        <Text>Given un reproductor de música&#xD;
+-&gt; done: MusicRemoteSteps.GivenUnReproductorDeMusica() (0,0s)&#xD;
+And un control remoto de música&#xD;
+-&gt; done: MusicRemoteSteps.GivenUnControlRemotoDeMusica() (0,0s)&#xD;
+And el comando Skip configurado en el control remoto&#xD;
+-&gt; done: MusicRemoteSteps.GivenElComandoConfiguradoEnElControlRemoto("Skip") (0,0s)&#xD;
+When presiono el botón del control remoto&#xD;
+-&gt; done: MusicRemoteSteps.WhenPresionoElBotonDelControlRemoto() (0,0s)&#xD;
+Then recibo el mensaje Skipping to the next song.&#xD;
+-&gt; done: MusicRemoteSteps.ThenReciboElMensaje("Skipping to the n...") (0,0s)&#xD;
+</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+</TestRun>
