@@ -33,7 +33,11 @@ jobs:
 
 
       - name: Build
-        run: dotnet build --configuration Release --no-restore
+        shell: pwsh
+        run: |
+          dotnet build src/MusicApp/MusicApp.csproj --configuration Release --no-restore
+          dotnet build tests/MusicApp.UnitTests/MusicApp.UnitTests.csproj --configuration Release --no-restore
+          dotnet build tests/MusicApp.BddTests/MusicApp.BddTests.csproj --configuration Release --no-restore
 
       - name: Test Unit with Coverage
         run: dotnet test tests/MusicApp.UnitTests/MusicApp.UnitTests.csproj --configuration Release --no-build --logger "trx;LogFileName=unit_tests.trx" /p:CollectCoverage=true /p:CoverletOutput="TestResults/coverage/" /p:CoverletOutputFormat="cobertura"
