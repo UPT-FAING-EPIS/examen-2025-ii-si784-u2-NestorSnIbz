@@ -63,7 +63,8 @@ jobs:
           $env:PATH += ";$env:USERPROFILE\.dotnet\tools"
           $dll = "tests/MusicApp.BddTests/bin/Release/net8.0/MusicApp.BddTests.dll"
           $json = (Get-ChildItem -Recurse -Path tests/MusicApp.BddTests -Filter "*.json" | Select-Object -First 1).FullName
-          livingdoc test-assembly $dll -t $json -o gh-pages/bdd-livingdoc
+          New-Item -ItemType Directory -Force -Path gh-pages/bdd-livingdoc | Out-Null
+          livingdoc test-assembly $dll -t $json -o gh-pages/bdd-livingdoc/LivingDoc.html
 
       - name: Copy TRX results
         shell: pwsh
